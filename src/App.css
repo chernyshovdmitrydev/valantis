@@ -1,0 +1,44 @@
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 2px;
+}
+
+li {
+  list-style: none;
+  flex-basis: calc(20% - 2px);
+  border: 1px solid black;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+.loading span {
+  animation: load 1s infinite linear;
+  font-size: 30px;
+}
