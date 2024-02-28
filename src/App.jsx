@@ -134,8 +134,6 @@ function App() {
     if (selectedBrand !== "") {
       filterObject["brand"] = selectedBrand;
     }
-
-    setCurrentPage(1);
     fetchItems(0, 50, filterObject);
   };
   const nextPage = () => {
