@@ -210,7 +210,9 @@ function App() {
       <button onClick={nextPage} disabled={isLoading}>
         Следующая страница
       </button>
-      <a href="https://github.com/chernyshovdmitrydev">by chernyshovdmitrydev</a>
+      <a href="https://github.com/chernyshovdmitrydev">
+        by chernyshovdmitrydev
+      </a>
       <ul>
         {!isLoading ? (
           products.length > 0 ? (
